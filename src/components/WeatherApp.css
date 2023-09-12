@@ -93,3 +93,62 @@
 .icon{
     margin-top: 10px
 }
+
+/* Dispositivi medi (portrait tablets e dispositivi di dimensioni medie, 601px - 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .top-bar input {
+        width: 80%;
+    }
+    .weather-temp {
+        font-size: 100px;
+    }
+    .weather-location {
+        font-size: 50px;
+    }
+}
+
+/* Piccoli dispositivi (telefoni, 600px e inferiori) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .top-bar input {
+        width: 60%;  /* ridotta al 60% della larghezza originale */
+        height: 50px;  /* altezza ridotta */
+        font-size: 16px;  /* ridimensiona la dimensione del carattere */
+        padding-left: 20px;  /* spazio ridotto a sinistra */
+    }
+
+    .search-icon {
+        width: 50px;  /* ridimensiona la larghezza */
+        height: 50px;  /* ridimensiona l'altezza */
+    }
+
+    .search-icon img {
+        width: 40%;  /* ridimensiona l'immagine all'interno del div */
+        height: auto;
+    }
+
+    .weather-temp {
+        font-size: 60px;
+    }
+
+    .weather-location {
+        font-size: 30px;
+    }
+
+    .data {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
